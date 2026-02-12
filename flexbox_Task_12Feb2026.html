@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox_task</title>
+    <style>
+        body {
+            background-color: #ffffff;
+        }
 
+        .header {
+            background-color: #030303;
+            color: white;
+            padding: 2vh 2vw;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0.4vh 1vh rgba(223, 5, 5, 0.956);
+            justify-content: space-between;
+        }
+
+        .name {
+            font-size: 2vw;
+            font-weight: bold;
+            letter-spacing: 0.1vw;
+            color: #ffffff;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            gap: 2vh;
+            padding: 0;
+        }
+
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.6vw;
+        }
+
+        .search-section {
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+        }
+
+        .side-bar {
+            background-color: #000000;
+            padding: 2vh 2vw;
+            width: 15vw;
+            min-height: 100vh;
+            font-size: 3.5vw;
+        }
+
+        .container-aside {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="name">FlexBox Practical</div>
+
+        <div class="search-section">
+            <form>
+                <input type="search" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="button-section">
+            <button class="button">Get Started</button>
+        </div>
+    </header>
+
+    <div class="container-aside">
+        <aside class="side-bar">
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+    </div>    
+
+</body>
+</html>
